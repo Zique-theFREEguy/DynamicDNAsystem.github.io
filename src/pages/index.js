@@ -1,6 +1,6 @@
 import React from "react";
 import theme from "theme";
-import { Theme, Link, Text, Box, Section, Image, Span, Input, Icon, Button } from "@quarkly/widgets";
+import { Theme, Link, Text, Box, Section, Strong, Image, Span, Input, Icon, Button } from "@quarkly/widgets";
 import { Helmet } from "react-helmet";
 import { GlobalQuarklyPageStyles } from "global-page-styles";
 import { RawHtml, Override, SocialMedia } from "@quarkly/components";
@@ -120,7 +120,13 @@ export default (() => {
 				</Box>
 			</Components.QuarklycommunityKitMobileSidePanel>
 		</Section>
-		<Section background="--color-darkL1" padding="0px 0 0px 0" quarkly-title="HeroBlock" md-flex-wrap="wrap">
+		<Section
+			background="--color-secondary"
+			padding="0px 0 0px 0"
+			quarkly-title="HeroBlock"
+			md-flex-wrap="wrap"
+			color="--dark"
+		>
 			<Override slot="SectionContent" flex-direction="row" md-flex-wrap="wrap" />
 			<Box
 				empty-min-width="64px"
@@ -145,8 +151,22 @@ export default (() => {
 					justify-content="space-between"
 					flex="1 1 0%"
 				>
-					<Text font="--headline3" color="--light" sm-font="400 36px/1.2 &quot;Fira Sans&quot;, sans-serif" margin="0px 0px 0px 0px">
-						B2B Matchmaking Has Never Been Easier
+					<Text
+						font="--headline3"
+						color="#972406"
+						sm-font="400 36px/1.2 &quot;Fira Sans&quot;, sans-serif"
+						margin="0px 0px 0px 0px"
+						background="rgba(0, 0, 0, 0)"
+					>
+						Getting{" "}
+						<Strong>
+							Everything
+						</Strong>
+						{" "}You Need Has Never Been Easier or{" "}
+						<Strong>
+							FREE
+						</Strong>
+						r
 					</Text>
 					<Text margin="32px 0px 0px 0px" font="--lead" color="--light" md-padding="0px 0px 40px 0px">
 						Targeted dialogues between customers and merchants based on their profiles and preferences will redefine networking.
@@ -163,13 +183,13 @@ export default (() => {
 				md-width="100%"
 			>
 				<Image
-					src="https://images.unsplash.com/photo-1555421689-3f034debb7a6?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80"
+					src="https://images.unsplash.com/photo-1707096356942-b82ec3b32cff?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&h=2000"
 					max-width="100%"
 					min-height="600px"
 					object-fit="cover"
 					lg-min-height="500px"
 					sm-min-height="400px"
-					srcSet="https://images.unsplash.com/photo-1555421689-3f034debb7a6?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80 500w,https://images.unsplash.com/photo-1555421689-3f034debb7a6?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80 800w,https://images.unsplash.com/photo-1555421689-3f034debb7a6?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1080&q=80 1080w,https://images.unsplash.com/photo-1555421689-3f034debb7a6?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1600&q=80 1600w,https://images.unsplash.com/photo-1555421689-3f034debb7a6?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2000&q=80 2000w,https://images.unsplash.com/photo-1555421689-3f034debb7a6?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2600&q=80 2600w,https://images.unsplash.com/photo-1555421689-3f034debb7a6?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=3200&q=80 3200w"
+					srcSet="https://images.unsplash.com/photo-1707096356942-b82ec3b32cff?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&h=2000&w=500 500w,https://images.unsplash.com/photo-1707096356942-b82ec3b32cff?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&h=2000&w=800 800w,https://images.unsplash.com/photo-1707096356942-b82ec3b32cff?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&h=2000&w=1080 1080w,https://images.unsplash.com/photo-1707096356942-b82ec3b32cff?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&h=2000&w=1600 1600w,https://images.unsplash.com/photo-1707096356942-b82ec3b32cff?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&h=2000&w=2000 2000w,https://images.unsplash.com/photo-1707096356942-b82ec3b32cff?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&h=2000&w=2600 2600w,https://images.unsplash.com/photo-1707096356942-b82ec3b32cff?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&h=2000&w=3200 3200w"
 					sizes="(max-width: 576px) 100vw,(max-width: 768px) 100vw,(max-width: 992px) 100vw,100vw"
 				/>
 			</Box>
